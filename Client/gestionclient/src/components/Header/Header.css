@@ -1,0 +1,304 @@
+#notif{
+  width: 64px;
+    padding-top: 39px;
+}
+.dropdown-item svg {
+    margin-bottom: 2px;
+    margin-right: 7px;
+}
+
+#addButton svg {
+    margin-bottom: -40px;
+    margin-right: -3px;
+    font-size: 23pt;
+}
+
+#nav-sign-up {
+    padding: 10px;
+    display: block;
+
+  margin-right: 30px;
+ 
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#addButton {
+    padding: 7px;
+}
+
+.navbar-nav .dropdown {
+    top: 3px;
+}
+
+#nav-sign-in {
+    color: white;
+    padding: 10px;
+    background: #343a40;
+    border-radius: 5px;
+}
+/* Style 3: Just animate the :after element's width from 0 to 100% */
+
+/* #nav-sign-up:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    display: block;
+    transition: all 0.3s ease;
+    bottom: 85%;
+  }
+  #nav-sign-up:hover::after {
+    width: 80%;
+    height: 3px;
+    background-color: rgb(34, 46, 35);
+  }
+#nav-sign-in:hover{
+    background-color: #23272b;
+} */
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-toggle svg {
+    
+    font-size: 24pt;
+}
+
+.navbar-nav svg {
+    color: black;
+    font-size: 14pt;
+}
+
+#collasible-nav-dropdown svg {
+    
+    font-size: 24pt;
+}
+
+.dropleft .dropdown-toggle::before {
+    display: none;
+}
+
+.navbar-brand a {
+    font-family: serif;
+    font-style: italic;
+    font-size: 20pt;
+}
+
+.dropdown-item.active, .dropdown-item:focus, .dropdown-item.active svg {
+    color: white;
+    background-color: #343a40;
+}
+#navImg {
+    margin-bottom: -35px;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 100px;
+    border: 1px solid black;
+}
+.navbar {
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 1500px;
+  }
+  
+  .navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 2rem;
+  }
+  
+  .nav-item {
+    height: 80px;
+  }
+  
+  .nav-links {
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  }
+  
+  .nav-links:hover {
+    border-bottom: 4px solid rgb(3, 3, 3);
+    transition: all 0.2s ease-out;
+  }
+  
+  .fa-bars {
+    color: rgb(0, 0, 0);
+  }
+  
+  .nav-links-mobile {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .NavbarItems {
+      position: relative;
+    }
+    #navImg {
+      margin-left: -150px;
+  }
+  #addButton svg {
+    margin-left: -180px;
+
+}
+#notif{
+  margin-left: -66px;
+  z-index: 99;
+  position: relative;
+}
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.active {
+      background: #242222;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-links:hover {
+      background-color: #fff;
+      color: #242424;
+      border-radius: 0;
+    }
+  
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .fa-times {
+      color: #fff;
+      font-size: 2rem;
+    }
+  
+    .nav-links-mobile {
+      display: block;
+      text-align: center;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 80%;
+      text-decoration: none;
+      font-size: 1.5rem;
+      background-color: transparent;
+      color: #fff;
+      padding: 14px 20px;
+      border: 1px solid #fff;
+      transition: all 0.3s ease-out;
+    }
+  
+    .nav-links-mobile:hover {
+      background: #fff;
+      color: #242424;
+      transition: 250ms;
+    }
+  }
+
+  .shopping-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+
+  .cart-icon {
+    margin-left: -66px;
+    z-index: 99;
+    position: relative;
+ }
+ .cart-count {
+  display: block;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  width: 24px;
+  border-radius: 50%;
+  top: -6px;
+  right: -9px;
+}
+
+
+
+ 
+
+

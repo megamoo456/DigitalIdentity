@@ -1,0 +1,16 @@
+#auth-form{
+    min-height: calc(59vh - 86px);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#simpleSider {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/006/899/440/non_2x/data-protection-cyber-security-privacy-business-internet-technology-concept-free-photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 135px;
+    margin-bottom: 2%;
+    text-align: center;
+    padding-top: 30px;
+    font-family: serif;
+}
